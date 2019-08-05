@@ -2,12 +2,11 @@
 import config
 import csv
 
-
+# 将用户名去重
 def way(reader):
-    count=0
-    list=[]
-    for i in range(len(list)):
-        pass
+    list=set(reader)
+    print(type(list))
+    return list
 if __name__ == '__main__':
     reader = list(csv.reader(open(config.url, encoding="utf-8")))
     print(type(reader))

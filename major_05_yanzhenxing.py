@@ -1,5 +1,5 @@
 # encoding:utf-8
-import pandas
+import wyf_quchong
 import config
 
 if __name__ == '__main__':
@@ -16,16 +16,16 @@ if __name__ == '__main__':
             if need=="Q":
                 break
             if need == str(1):
-                print("需求1查询结果：")
+                print("需求1查询结果：%s"%wyf_quchong.need_01())
                 continue
             if need == str(2):
-                print("需求2查询结果")
+                print("需求2查询结果: %s")
                 continue
             if need == str(3):
-                print("需求3查询结果")
+                print("需求3查询结果: %s")
                 continue
             if need == str(4):
-                print("需求4查询结果")
+                print("需求4查询结果: %s")
                 continue
             if need != str(1) and need != str(2):
                 if need != str(3) and need != str(4):
