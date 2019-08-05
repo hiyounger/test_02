@@ -1,2 +1,2 @@
-# ovc1024_05
-webdriver ui autotest for ovc1024
+# test_02
+webdriver ui autotest for test_02
