@@ -27,8 +27,14 @@ if __name__ == '__main__':
                 continue
             if need == str(3):
                 print("需求3查询结果: ")
-                list=major_03_yangjun.get_username()
-                print(major_03_yangjun.need_03(list))
+                user = major_03_yangjun.get_username()
+                time = major_03_yangjun.get_userNameAndTime()
+                time1 = major_03_yangjun.need_03(user, time)
+                time1=major_03_yangjun.get_need_03(time1)
+                time2 = major_03_yangjun.get_need_03(time1)
+                time3=major_03_yangjun.get_count_daka(time2)
+                for i in range(len(time3)):
+                    print("%s 应该打卡 %s 次" % (time3[i][0], time3[i][3]-1))
                 continue
             if need == str(4):
                 print("需求4查询结果: ")
