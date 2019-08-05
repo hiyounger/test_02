@@ -2,6 +2,7 @@
 import wyf_quchong
 import block_04_yanzhenxing
 import liu_count
+import major_03_yangjun
 import config
 
 if __name__ == '__main__':
@@ -25,7 +26,9 @@ if __name__ == '__main__':
                 liu_count.need_02()
                 continue
             if need == str(3):
-                print("需求3查询结果: %s")
+                print("需求3查询结果: ")
+                list=major_03_yangjun.get_username()
+                print(major_03_yangjun.need_03(list))
                 continue
             if need == str(4):
                 print("需求4查询结果: ")
@@ -38,5 +41,5 @@ if __name__ == '__main__':
                         print("请输入正确的需求代号：正确的需求代号为：1，2，3，4")
                         continue
         except:
-            print('请输入正确的需求代号')
+            print('csv文件格式或地址不正确')
             continue

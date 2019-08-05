@@ -18,20 +18,16 @@ def get_username():
     # print(user_new_list)
     return user_new_list
 
-def need_03(list):
+def need_03(list1):
     reader=list(csv.reader(open(config.url,encoding="utf-8")))
-    list_user=list
+    list_user=list1
     for i in range(len(reader)):
         for j in range(len(list_user)):
             if reader[i][1]==list_user[j][0]:
                 list_user[j][1]+=1
                 continue
-    return list_user
-
-
-
-
-
+    for us in list_user:
+        print("%s 需要打卡的次数是：%s" % (us[0], us[1]))
 
 # date = 0
 # name = 1
