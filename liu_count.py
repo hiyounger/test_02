@@ -13,4 +13,4 @@ def need_02():
             else:
                 dic[data[i][1]] += 1
     for a, b in dic.items():
-        return (a, "打卡", b, "次")
+        print (a, "打卡", b, "次")

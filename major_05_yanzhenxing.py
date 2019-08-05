@@ -1,6 +1,7 @@
 # encoding:utf-8
 import wyf_quchong
 import block_04_yanzhenxing
+import liu_count
 import config
 
 if __name__ == '__main__':
@@ -20,7 +21,8 @@ if __name__ == '__main__':
                 print("需求1查询结果：%s"%wyf_quchong.need_01())
                 continue
             if need == str(2):
-                print("需求2查询结果: %s")
+                print("需求2查询结果:")
+                liu_count.need_02()
                 continue
             if need == str(3):
                 print("需求3查询结果: %s")
