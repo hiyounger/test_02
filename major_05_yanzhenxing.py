@@ -1,5 +1,6 @@
 # encoding:utf-8
 import wyf_quchong
+import block_04_yanzhenxing
 import config
 
 if __name__ == '__main__':
@@ -25,7 +26,9 @@ if __name__ == '__main__':
                 print("需求3查询结果: %s")
                 continue
             if need == str(4):
-                print("需求4查询结果: %s")
+                print("需求4查询结果: ")
+                list=block_04_yanzhenxing.get_username()
+                block_04_yanzhenxing.need_way_04(list)
                 continue
             if need != str(1) and need != str(2):
                 if need != str(3) and need != str(4):
